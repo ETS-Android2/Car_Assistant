@@ -13,5 +13,6 @@ This project is just lite version of Self Driving Cars ML project(https://github
 
 
 ### Screenshots
-- ![](https://raw.githubusercontent.com/Aniket-gawade/Car_Assistant/master/screenshot/car_Assistant_1.jpeg)
-- - ![](https://raw.githubusercontent.com/Aniket-gawade/Car_Assistant/master/screenshot/car_Assistant_2.jpeg)
+- ![](https://raw.githubusercontent.com/Aniket-gawade/Car_Assistant/master/screenshot/car_Assistant_1.jpeg){ width=50% }
+
+![](https://raw.githubusercontent.com/Aniket-gawade/Car_Assistant/master/screenshot/car_Assistant_2.jpeg){ width=50% }
