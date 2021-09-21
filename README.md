@@ -8,7 +8,7 @@ classes) in the frames seen by your device's back camera, using a quantized
 model trained on the [COCO dataset](http://cocodataset.org/). These instructions
 walk you through building and running the demo on an Android device.
 
-This project is just lite version of Self Driving Cars ML project(https://github.com/dylan-007/Self-driving-cars). This application Detects objects like car, bus, truck and gives warning alert if object is very closed wich is approximately 5 meteres from camera.
+This project is just lite version of [Self Driving Cars ML project](https://github.com/dylan-007/Self-driving-cars/tree/final-mini-project). This application Detects objects like car, bus, truck and gives warning alert if object is very closed wich is approximately 5 meteres from camera.
 
 
 
