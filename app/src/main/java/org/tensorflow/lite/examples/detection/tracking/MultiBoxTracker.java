@@ -33,6 +33,8 @@ import android.widget.Toast;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
+
+import org.tensorflow.lite.examples.detection.DetectorActivity;
 import org.tensorflow.lite.examples.detection.env.BorderedText;
 import org.tensorflow.lite.examples.detection.env.ImageUtils;
 import org.tensorflow.lite.examples.detection.env.Logger;
@@ -70,6 +72,8 @@ public class MultiBoxTracker {
   private int frameWidth;
   private int frameHeight;
   private int sensorOrientation;
+
+  DetectorActivity obj;
 
   public MultiBoxTracker(final Context context) {
     for (final int color : COLORS) {
@@ -196,12 +200,15 @@ public class MultiBoxTracker {
       return;
     }
 
+
+
     for (final Pair<Float, Recognition> potential : rectsToTrack) {
       final TrackedRecognition trackedRecognition = new TrackedRecognition();
       trackedRecognition.detectionConfidence = potential.first;
       trackedRecognition.location = new RectF(potential.second.getLocation());
       trackedRecognition.title = potential.second.getTitle();
       trackedRecognition.color = COLORS[trackedObjects.size()];
+     // trackedRecognition.distance = obj.distance;
       trackedObjects.add(trackedRecognition);
 
       if (trackedObjects.size() >= COLORS.length) {
@@ -212,6 +219,7 @@ public class MultiBoxTracker {
 
   private static class TrackedRecognition {
     RectF location;
+    double distance;
     float detectionConfidence;
     int color;
     String title;
